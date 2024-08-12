@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background-color: aqua;
+            height: 90vh;
+            animation: change 20s ease infinite;
+        }
+        .a{
+            border: 2px solid;
+            background-color: blue;
+            display: inline-block;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-image: none;
+            position: absolute;
+            top: 300px;
+            left: 120px;
+        }
+        .b{
+            border: 2px solid;
+            background-color: rgb(26, 230, 26);
+            display: inline-block;
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            background-image: none;
+            position: absolute;
+            top: 400px;
+            left: 120px;
+        }
+        #abhi{
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            animation: color 3s ease 0s infinite;
+        }
+        #ram{
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 30px;
+            left: 20px;
+            animation: color 3s ease 0s infinite;
+        }
+        
+        @media screen and (width >320px) {
+            .a{
+                border:2px solid;
+                background-color: orangered;
+                height: 90px;
+                width: 90px;
+                border-radius: 50%;
+                position: absolute;
+                left: 150px;
+            }
+            .b{
+                border: 2px solid;
+                background-color: black;
+                height: 90px;
+                width: 90px;
+                border-radius:50%;
+                position: absolute;
+                top: 400px;
+                left:150px ;
+            }
+        }
+        @media screen and (width > 425px) and (width < 1024px)
+        {
+            .a{
+                border: 2px solid white;
+                background-color: crimson;
+                height: 100px;
+                width: 100px;
+                position: absolute;
+                left: 300px;
+            }
+            .b{
+                border: 2px solid white;
+                background-color: darkblue;
+                height: 100px;
+                width: 100px;
+                position: absolute;
+                top: 420px;
+                left: 300px;
+            }
+        }
+        @media screen and (width > 780px){
+            .a{
+                border: 2px solid white;
+                background-color: blueviolet;
+                height: 150px;
+                width: 150px;
+                border-radius: 50%;
+                position: absolute;
+                top: 240px;
+                left: 650px;
+            }
+            .b{
+                border: 2px solid white;
+                background-color: coral;
+                height: 150px;
+                width: 150px;
+                position:absolute;
+                top: 400px;
+                left:650px ;
+            }
+            #abhi{
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            top: 50px;
+            left: 20px;
+            font-size: xx-large;
+            animation: color 3s ease 0s infinite;
+            }
+            #ram{
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            position: absolute;
+            font-size: xx-large;
+            top: 50px;
+            left: 20px;
+            animation: color 3s ease 0s infinite;
+            }
+        
+        }
+
+        @keyframes change {
+            0%{
+                background-image: url('./gojo.jpg');
+                background-size: contain;
+            }
+            25%{
+                background-image: url('./aot.jpeg');
+                background-size: contain;
+            }
+            50%{
+                background-image: url('./shanks.jpg');
+                background-size: contain;
+            }
+            100%{
+                background-image: url('./ShinigamiAizen.webp');
+                background-size: contain;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">
+            <a href="./index1.html" id="abhi"> Task-1</a>
+        </div>
+        <div class="b">
+            <a href="./index3.html" id="ram"> Task-2</a>
+        </div>
+    </div>
+</body>
+</html>
