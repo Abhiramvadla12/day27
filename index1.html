@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel using css</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .container{
+            height: 500px;
+            width: 500px;
+            overflow-x: scroll;
+            display: flex;
+            scrollbar-width: none;
+            scroll-behavior: smooth;
+            border: 5px solid blue;
+            box-shadow: 5px 5px 10px aqua;
+            position: relative;
+            top:50px;
+            left: 35%;
+            
+        }
+        img{
+            animation: move 10s ease-in-out 2s infinite;
+        }
+        @keyframes move{
+            0%{
+                transform: translateX(-100px);
+            }
+            20%{
+                transform: translateX(-335px);
+            }
+            40%{
+                transform: translateX(-820px);
+
+            }
+            60%{
+                transform: translateX(-1000px);
+            }
+            80%{
+                transform: translateX(-1500px);
+            }
+            100%{
+                transform: translateX(-2000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./aot.jpeg" alt="Aot" title="attack on titan" height="500px" width="500px">
+        <img src="./death.jpeg" alt="death note" title="death note" height="500px" width="500px" >
+        <img src="./demon_slayer.jpeg" alt="demaons slayer" title="demons slayer" height="500px" width="500px">
+        <img src="./gojo.jpg" alt="gojo" height="500px" width="500px">
+        <img src="./shanks.jpg" alt="shanks" height="500px" width="500px">
+        <img src="./ShinigamiAizen.webp" alt="Aizen" title="Aizen" height="500px" width="500px">
+        <img src="./spy.jpeg" alt="spy x family" title="spy x family" height="500px" width="500px">
+    </div>
+</body>
+</html>
